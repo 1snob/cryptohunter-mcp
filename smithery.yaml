@@ -1,0 +1,47 @@
+name: cryptohunter-mcp
+displayName: "CryptoHunter: Crypto Data + AI Inference"
+description: "Live crypto prices, gas, DEX quotes, token safety, and local AI inference (Qwen/DeepSeek). Pay-per-use via x402 USDC on Base. No API key, no account."
+version: "1.2.0"
+license: MIT
+
+server:
+  type: http
+  url: https://cryptohunterx402apis.loca.lt
+  transport: http
+
+payment:
+  protocol: x402
+  network: "eip155:8453"
+  token: USDC
+  standard_price_usd: 0.001
+  premium_price_usd: 0.005
+
+tags:
+  - crypto
+  - defi
+  - ai
+  - x402
+  - micropayments
+  - base
+  - usdc
+  - llm
+
+tools:
+  - name: get_price
+    description: Live USD price for any crypto token(s)
+    price_usd: 0.001
+  - name: get_gas
+    description: Live gas prices on Base + Ethereum
+    price_usd: 0.001
+  - name: get_dex_quote
+    description: Best DEX swap quote via CoW Protocol
+    price_usd: 0.003
+  - name: get_token_safety
+    description: Token honeypot + rug risk analysis
+    price_usd: 0.003
+  - name: ai_ask
+    description: Fast AI answer — Qwen2.5 3B local LLM
+    price_usd: 0.002
+  - name: ai_reason
+    description: Deep reasoning — DeepSeek-R1 14.8B local LLM
+    price_usd: 0.005

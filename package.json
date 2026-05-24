@@ -1,0 +1,37 @@
+{
+  "name": "@cryptohunter/mcp-server",
+  "version": "1.2.0",
+  "description": "Live crypto data + AI inference MCP server. Pay-per-use via x402 USDC on Base. No API key.",
+  "main": "index.js",
+  "bin": {
+    "cryptohunter-mcp": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "x402",
+    "crypto",
+    "defi",
+    "base",
+    "usdc",
+    "micropayments",
+    "ai-inference",
+    "ollama",
+    "coingecko",
+    "deepseek",
+    "qwen"
+  ],
+  "author": "Leandro Alvarez <albertoalvarez@usa.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1snob/cryptohunter-mcp.git"
+  },
+  "homepage": "https://github.com/1snob/cryptohunter-mcp#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
